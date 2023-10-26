@@ -1,1 +1,1 @@
-# linux_practice_project
+# Devops
