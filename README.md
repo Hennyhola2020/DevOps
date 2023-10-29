@@ -2,7 +2,7 @@
 ### alias allow you to create an existing funtionality while unalias is to delete the existing alias.
 ## syntax
 ### alias name=string
-### unalias [alias_name]![alt text](alias,unalias.png)
+### unalias [alias_name]![alt text](./img/alias_unalias.png)
 
 # apt-get command
 ## apt-get is a command to retrieve information and bundles from authenticated sourcesto manage,update,remove and install software and its dependence also running this command require you to use sudo or root privilges.
@@ -195,7 +195,7 @@
 ## Zip command is useful for archiving files and directories and reducing disk usage.While Unzip command extracts the zipped files from an archives.
 # syntax
 ### zip [options] zipfile file1 file2
-### unzip [option] file_name.zip![alt text](zip%20and%20unzip.png)
+### unzip [option] file_name.zip![alt text](./img/zip_unzip.png)
 
 
 
