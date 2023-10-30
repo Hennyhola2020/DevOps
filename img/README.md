@@ -2,7 +2,7 @@
 ### alias allow you to create an existing funtionality while unalias is to delete the existing alias.
 ## syntax
 ### alias name=string
-### unalias [alias_name]![alt text](./img/alias_unalias.png)
+### unalias [alias_name]![alt text](./alias_unalias.png)
 
 # apt-get command
 ## apt-get is a command to retrieve information and bundles from authenticated sourcesto manage,update,remove and install software and its dependence also running this command require you to use sudo or root privilges.
