@@ -1,12 +1,12 @@
 # Devops Tooling Website Solution
 ### In previous project I implemented a WordPress based solution that is ready to be filled with content and can be used as a full fledged website or blog.Moving forward to add some value to our solutions that your DevOps team could utilize.The tools we want our team to be able to use are well known and widely used by multiple DevOps teams,so we will introduce a single DevOps Tooling Solution that will consist of:-
 #### Jenkins,Kubernetes,Jfrog Artifactory,Rancher,Grafana,Promentheus and Kibana
-# Implementing a business website using NFS for the backend file storage![diagram.jpg](./diagram.jpg)
-### Preparing 4 instances.One for NFS and 3 for Webserver by  using Redhat 8 and create Database by using Ubuntu. So we create  3 (EBS volume) and attach all 3 volume to NFS and connect NFS to the terminal ![SSH.jpg](./NFS-SSH.jpg) then update NFS ![update.jpg](./nfs-update.jpg)
-### Create volume webdata ![vgs.jpg](./vg-vgs-lvcreate-lvs.jpg) instead of format disks as ext4,we format as xfs![format.jpg](./format-logs&opt.jpg) ![disk.jpg](./disks-format.jpg)then logical volume![display.jpg](./vgdisplay.jpg) 
-### Now move to Database server,SSH and install mysql server and create mysql![mysql.jpg](./mysql-db.jpg) create webaccess using webserver subnet IP then grant and flush all privileges ![grant.jpg](./grant&flush-privileges.jpg) then show databases and tables,move NFS server to install nfs![nfs.jpg](./nfs-install.jpg),update![update.jpg](./nfs-update.jpg) and check status if it's running![status.jpg](./nfs_status.jpg)![db.jpg](./show-databases-tooling&show-tables.jpg) 
+# Implementing a business website using NFS for the backend file storage  ![Alt.text](./diagram.jpg)
+### Preparing 4 instances.One for NFS and 3 for Webserver by  using Redhat 8 and create Database by using Ubuntu. So we create  3 (EBS volume) and attach all 3 volume to NFS and connect NFS to the terminal ![Alt.text](./NFS-SSH.jpg) then update NFS ![Alt.text](./nfs-update.jpg)
+### Create volume webdata ![Alt.text](./vg-vgs-lvcreate-lvs.jpg) instead of format disks as ext4,we format as xfs![Alt.text](./format-logs&opt.jpg) ![Alt.text](./disks-format.jpg)then logical volume![Alt.text](./vgdisplay.jpg) 
+### Now move to Database server,SSH and install mysql server and create mysql![Alt.text](./mysql-db.jpg) create webaccess using webserver subnet IP then grant and flush all privileges ![Alt.text](./grant&flush-privileges.jpg) then show databases and tables,move NFS server to install nfs![Alt.text](./nfs-install.jpg),update![Alt.text](./nfs-update.jpg) and check status if it's running![Alt.text](./nfs_status.jpg)![db.jpg](./show-databases-tooling&show-tables.jpg) 
 ### Set up permission that will allow our webservers to read,write and execute files on NFS and restart NFS server![startnfs.jpg](./start&enable-nfs.jpg) 
-### Configure access to NFS for clients within the same subnet ![subnet](./etc-exports.jpg)![export](./sudo-vi&exportfs.jpg)
+### Configure access to NFS for clients within the same subnet ![subnet](./img/etc-exports.jpg)![export](./sudo-vi&exportfs.jpg)
 ### Check port used by NFS and open it using security groups![grep.jpg](./grep-nfs.jpg)
 ### In order for NFS server to be accessible from the client,we open the following ports:-TCP 111,UDP 111,UDP 2049
 ### SSH to webserver terminal to work on it, install nfs client ![nfs-client.jpg](./install_nfs_webserver.jpg) back to NFS server we creat directory(var/www)![mkdir.jpg](./mkdir_mount_var-www_lsblk_df-h.jpg)
