@@ -33,4 +33,3 @@
 ### Commit the changes,create a pull request and merge them to master branch,make sure webhook triggered two consequent jenkins jobs,they run successfully and copied all thge files to the Jenkins-Ansible server into /home/ubuntu/ansible-config-mgt/ directory.
 ### Before running playbook against the uat,make sure you tunneled into the Jenkins-Ansible server via ssh-agent![alt.text](./img/ssh_agent.jpg)and run the following![alt.text](./img/playbook-site.jpg).Both of the UAT Web servers were configured by checking through browser![alt.text](./img/Brower-diagram.jpg)
 ### My ansible architecture now looks like this![alt.text](./img/Ansible_architecture.jpg)
-### Finally Good job for the work well done![alt.text](./img/Good-Job.jpg)
