@@ -1,0 +1,12 @@
+---
+- hosts: uat-webservers
+  roles:
+<<<<<<< HEAD
+     - webserver
+=======
+<<<<<<< HEAD
+     - webserver
+=======
+     - webserver
+>>>>>>> 135b236809c2d733b76d455468f5af2d5800eb57
+>>>>>>> 127a849d01983cd4880aeea692291037e044bac8
