@@ -1,4 +1,4 @@
-.# Ansible Refactoring,assignment and imports
+# Ansible Refactoring,assignment and imports
 ### In this project we continue working with" ansible-config-mgt" repository and make some improvements of our code and also learn how to use imports functionality.Imports allow to effectively re-use previously created playbooks in a new playbook also allows you to organize the tasks and reuse them when needed.
 ## Step 1: Before starting we begin,we makes some changes to the jenkins job.Let's enhance it by introducing a new Jenkins project/job- we will require copy Artifact plugin.Go to Jenkins -Ansible server and create a new directory called ansible-config-artifact![alt.text](./img/mkdir&chmod_ansible_config_artifact.jpg) and also change permission to this directory,so jenkins could save files there.
 ### Go to jenkins web console->Manage Jenkins->Manage Plugins->Available tab search for copy Artifact install the plugins without restarting Jenkins.
